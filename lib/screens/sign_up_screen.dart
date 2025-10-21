@@ -14,10 +14,10 @@ class SignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: const Color(0xffEEF1F3),
-        body: SingleChildScrollView(
+    return Scaffold(
+      backgroundColor: const Color(0xffEEF1F3),
+      body: SafeArea(
+        child: SingleChildScrollView(
           child: Form(
             key: context.read<UserCubit>().signUpFormKey,
             child: Column(
